@@ -1,4 +1,3 @@
-// Define the Person class
 // Person class
 class Person {
   constructor(name, age) {
@@ -16,7 +15,7 @@ class Person {
     this._age = age;
   }
 
-  // Getter for age to validate the set age
+  // Getter for age (optional for validation)
   get age() {
     return this._age;
   }
@@ -25,14 +24,14 @@ class Person {
 // Student class extending Person
 class Student extends Person {
   study() {
-    console.log(`${this._name} is studying`);
+    console.log(`${this.name} is studying`);
   }
 }
 
 // Teacher class extending Person
 class Teacher extends Person {
   teach() {
-    console.log(`${this._name} is teaching`);
+    console.log(`${this.name} is teaching`);
   }
 }
 
